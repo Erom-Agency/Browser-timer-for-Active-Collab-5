@@ -1,0 +1,121 @@
+#acErm {position:fixed; left:50%; top:50%; z-index:9999 !important; font-size:12.5px; width:36px !important; height:45px !important; padding:0; margin:0;}
+#acErm * {padding:0; margin:0;}
+#acErm #acErmInner {padding:35px 20px 10px 20px; border:1px solid #e1e1e1; border-radius:3px; width:300px; background:#f7f7f7; margin:27px 0 0 -132px; color:#222222; position:relative;}
+#acErm.hidden #acErmInner {height:0; width:0; padding:0; overflow:hidden; border:none;}
+
+#acErm .clear {display:block; clear:both;}
+#acErm .acErmButton {border-radius:2px; font-size:12px; font-weight:bold; height:28px;}
+#acErm #acErmStartDragIcon,
+#acErm #acErmStartClickIcon,
+#acErm #taskHandler,
+#acErm.start #taskHandler,
+#acErm.active #taskHandler,
+#acErm.running #taskHandler,
+#acErm.running #taskHandlerHand,
+#acErm.error #taskHandler,
+#acErm.notice #taskHandler
+{background-repeat:no-repeat; background-image:url('data:image/png;base64,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');}
+
+#acErm #acErmStart {padding:35px 20px 20px 20px; border:1px solid #e1e1e1; border-radius:3px; width:300px; background:#f7f7f7; margin:27px 0 0 -132px;}
+#acErm.hidden #acErmStart {height:0; width:0; padding:0; overflow:hidden; border:none;}
+#acErm.start #acErmInner {height:0; width:0; padding:0; overflow:hidden; border:none;}
+#acErm.error #acErmInner {height:0; width:0; padding:0; overflow:hidden; border:none;}
+#acErm #acErmStartDesc {margin:0 0 15px 0;}
+#acErm #acErmStartHowTo {margin:0 0 10px 0;}
+#acErm #acErmStartDrag {margin:0 0 10px 0; padding:0 0 0 25px; position:relative;}
+#acErm #acErmStartDragIcon {background-position:-144px 0; width:15px; height:15px; position:absolute; left:0; top:1px;}
+#acErm #acErmStartClick {margin:0 0 15px 0; padding:0 0 0 25px; position:relative;}
+#acErm #acErmStartClickIcon {background-position:-144px -15px; width:11px; height:11px; position:absolute; left:3px; top:3px;}
+#acErm #acErmStartButtonWrapper {text-align:right;}
+#acErm #acErmStartButton {background:#222222; border:1px solid #9f9f9f; color:#ffffff; width:130px; font-weight:bold;}
+#acErm #acErmStartButton:hover {background:#333333;}
+#acErm #acErmStartButton::after {content:'Ok, I got it';}
+
+#acErm #taskHead {border-bottom:1px solid #e1e1e1;}
+#acErm #taskTitleWrapper {padding:0 0 10px 0;}
+#acErm #taskTitleLabel {color:#9b9b9b; padding:0 5px 0 0;}
+#acErm #taskTitle {color:#222222;}
+#acErm #projectTitleWrapper {padding:0 0 10px 0;}
+#acErm #projectTitleLabel {color:#9b9b9b; padding:0 5px 0 0;}
+#acErm #projectTitle {color:#222222;}
+#acErm #taskOptionsStatus {padding:0; height:0; width:0; overflow:hidden;}
+#acErm.active.closed #taskOptionsStatus {padding:15px 0 15px 0; height:auto; width:auto; overflow:visible; border-top:1px solid #e1e1e1;}
+#acErm #taskBillableStatus {width:25%; float:left; margin:0 12% 0 0; color:#c71515;}
+#acErm #taskBillableStatus.billable {color:#00b25c;}
+#acErm #taskJobTypeStatus {width:63%; float:left; color:#9b9b9b;}
+
+#acErm #taskHandler {position:absolute; left:0; top:0; width:36px; height:45px; background-position:-36px 0; cursor:pointer;}
+#acErm.start #taskHandler {background-position:-36px 0 !important;}
+#acErm.active #taskHandler {background-position:-72px 0;}
+#acErm.running #taskHandler {background-position:-108px 0 !important;}
+#acErm #taskHandlerHandContainer {display:none; animation:none; width:22px; height:22px; position:absolute; left:7px; bottom:7px;}
+#acErm.running #taskHandlerHandContainer {display:block; animation:rotate 8s infinite linear;}
+#acErm.running #taskHandlerHand {width:2px; height:12px; background-position:-144px -26px; position:absolute; top:0px; left:10px;}
+#acErm.error #taskHandler {background-position:0 0 !important;}
+#acErm.error #taskHandlerHandContainer {display:none; animation:none;}
+#acErm.notice #taskHandler {background-position:0 0 !important;}
+#acErm.notice #taskHandlerHandContainer {display:none; animation:none;}
+@keyframes rotate {100% {transform:rotateZ(360deg);}}
+
+#acErm #taskTime {padding:20px 0;}
+#acErm #taskTimeLabel {text-align:center; height:28px; font-size:18px; font-weight:bold; color:#808080; padding:2px 0 0 0;}
+#acErm.active #taskTimeLabel {color:#000000;}
+#acErm #taskTimeButton {float:right; width:130px; background-color:#f0f0f0; border:1px solid #d1d1d1; color:#808080; margin:0 0 0 10px; position:relative;}
+#acErm #taskTimeButton:hover {background-color:#f3f3f3;}
+#acErm #taskTimeButton::after {content:'Start timer';}
+#acErm.active #taskTimeButton {background-color:#4181f2; border:1px solid #2762ca; color:#ffffff;}
+#acErm.active #taskTimeButton:hover {background-color:#4f8af3;}
+#acErm.active #taskTimeButton::after {content:'Start timer';}
+#acErm.running #taskTimeButton {background-color:#36ba82 !important; border:1px solid #2b9266 !important;}
+#acErm.running #taskTimeButton:hover {background-color:#39c68a !important;}
+#acErm.running #taskTimeButton::after {content:'Stop timer' !important;}
+
+#acErm #taskOptions {height:auto; width:auto; overflow:visible; padding:20px 0; border-bottom:1px solid #e1e1e1;}
+#acErm.closed #taskOptions {height:0; width:0; overflow:hidden; padding:0;}
+#acErm .taskOptionsLabel {width:22%; margin:0 10% 0 0; font-weight:normal; float:left; height:24px; padding:5px 0 0 0; font-size:12.5px; color:#808080;}
+#acErm.active .taskOptionsLabel {color:#222222;}
+#acErm .taskOptionsSelect {width:45%; float:left; height:24px; padding:0 10px; font-size:12.5px; color:#222222;}
+#acErm #taskBillableWrapper {width:100%; float:left;}
+#acErm #taskJobTypeWrapper {width:100%; float:left; padding:10px 0 0 0;}
+#acErm #taskDescriptionWrapper {clear:both; padding:20px 0 0 0;}
+#acErm #taskDescription {width:100%; min-height:75px; font-size:12.5px; resize:none; padding:4px 8px 4px 8px; color:#222222;}
+
+#acErm #taskOptionsHandler {margin:0 auto; padding:10px 30px 10px 30px; width:70px; height:30px; cursor:pointer; position:relative;}
+#acErm #taskOptionsHandlerIcon {width:10px; height:10px; font-size:16px; color:#999999; line-height:5px; transform:rotate(-90deg); position:absolute; left:30px; top:10px;}
+#acErm #taskOptionsHandler:hover #taskOptionsHandlerIcon {color:#46546c;}
+#acErm.closed #taskOptionsHandlerIcon {transform:rotate(90deg);}
+
+#acErm #taskOptionsHandlerIconMore {display:none; position:absolute; left:45px; top:10px; width:35px; height:10px; color:#46546c; font-size:12px; line-height:7px;}
+#acErm #taskOptionsHandler:hover #taskOptionsHandlerIconMore {display:block;}
+#acErm #taskOptionsHandlerIconMore:after {content:'less';}
+#acErm.closed #taskOptionsHandlerIconMore:after {content:'more';}
+
+#acErm #taskAbout {display:block; width:16px; height:16px; line-height:14px; text-align:center; font-size:11px; color:#d0d0d0; border:1px solid #d0d0d0; border-radius:8px; position:absolute; left:18px; bottom:18px; text-decoration:none;}
+#acErm #taskAbout:hover {color:#46546c; border-color:#46546c;}
+#acErm #taskAboutMore {display:none; position:absolute; left:20px; top:0; height:16px; width:86px; text-align:left; font-size:12px; line-height:12px;}
+#acErm #taskAbout:hover #taskAboutMore {display:block;}
+
+#acErm #taskTimeButtonLoader {height:0; width:0; overflow:hidden;}
+#acErm #taskTimeButtonLoader.active {position:absolute; left:0; top:0; width:100%; height:100%; border-radius:1px;}
+#acErm #taskTimeButtonLoader .loaderRect {margin:3px 1px 0 1px;}
+
+#acErm #taskSelected {height:0; width:0; overflow:hidden; padding:0 0 15px 0;}
+#acErm.active #taskSelected {height:auto; width:auto; overflow:visible;}
+#acErm.active #taskNoneSelected {height:0; width:0; overflow:hidden;}
+
+#acErm #acErmError {height:0; width:0; overflow:hidden;}
+#acErm.error #acErmError {padding:35px 20px 20px 20px; border:1px solid #e1e1e1; border-radius:3px; width:300px; height:auto; background:#f7f7f7; margin:27px 0 0 -132px;}
+#acErm #acErmErrorMessage {color:#870000; padding:0 0 20px 0;}
+#acErm #acErmErrorButton {background:#222222; border:1px solid #9f9f9f; color:#ffffff; width:130px; font-weight:bold; float:right;}
+#acErm #acErmErrorButton:hover {background:#333333;}
+#acErm #acErmErrorButton::after {content:'Ok, I got it';}
+
+#acErm #acErmNotice {height:0; width:0; overflow:hidden;}
+#acErm.notice #acErmNotice {padding:0 0 15px 0; margin:0 0 15px 0; border-bottom:1px solid #e1e1e1; height:auto; width:auto;}
+#acErm #acErmNoticeMessage::before {content:'!'; background:#870000; border-radius:10px; width:15px; height:15px; display:block; color:#ffffff; float:left; margin:0 5px 0 0; line-height:15px; text-align:center;}
+
+#acErm #taskLoader {height:0; width:0; overflow:hidden;}
+#acErm #taskLoader.active {position:absolute; left:0; top:0; width:100%; height:100%; border-radius:2px; background:rgba(0,0,0,0.5);}
+#acErm #taskLoaderContainer {display:none;}
+#acErm #taskLoader.active #taskLoaderContainer {display:block; background:none; position:absolute; left:50%; top:50%; margin:-13px 0 0 -17px; width:34px; height:26px;}
+#acErm #taskLoader.active #taskLoaderContainer .loaderRect {margin:0 1px;}

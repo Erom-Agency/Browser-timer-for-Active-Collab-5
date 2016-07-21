@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Browser timer for Active Collab 5",
+	"description": "Time tracker working in the Active Collab web dashboard. It stores time for each task in the time tracking section so you can use it for billing and reports.",
+	"version": "0.0.18",
+	"icons": {"16": "icons/icon.png", "32":"icons/icon.png", "48":"icons/icon.png", "128":"icons/icon.png"},
+	"author": "Erom Agency",
+	"homepage_url": "http://www.eromagency.com/actimer/",
+	"minimum_chrome_version": "40",
+
+	"content_scripts": [{
+		"matches": ["*://*/*"],
+		"js": ["data/inc/jquery.min.js", "data/inc/jquery-ui.min.js", "data/inc/main.js", "data/bootstrap.js"],
+		"css": ["data/inc/main.css"]
+	}],
+	
+	"options_ui": {
+		"page": "options/options.html",
+		"chrome_style": true
+	},
+	"permissions": [
+		"storage"
+	]
+}
