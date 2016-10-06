@@ -560,7 +560,7 @@ function Erm()
 			if (firstTime)
 			{
 				template += '<div id="acErmStart">';
-					template += '<div id="acErmStartDesc">Welcome to the Timer for Active Collab - a browser extension.</div>';
+					template += '<div id="acErmStartDesc">Welcome to the Timer for Active Collab - a Chrome browser extension.</div>';
 					template += '<div id="acErmStartHowTo">How to use it:</div>';
 					template += '<div id="acErmStartDrag"><div id="acErmStartDragIcon"></div>Drag to reposition timer</div>';
 					template += '<div id="acErmStartClick"><div id="acErmStartClickIcon"></div>Click to show and hide the timer details</div>';

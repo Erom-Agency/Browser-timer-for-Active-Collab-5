@@ -1,7 +1,7 @@
 {
 	"title": "Browser timer for Active Collab 5",
-	"name": "ermactivecollabtimer",
-	"version": "0.0.18",
+	"name": "browsertimeractivecollab",
+	"version": "1.0.0",
 	"description": "Time tracker working in the Active Collab web dashboard. It stores time for each task in the time tracking section so you can use it for billing and reports.",
 	"main": "index.js",
 	"author": "Erom Agency",
@@ -15,8 +15,8 @@
 	],
 	"preferences": [{
 		"name": "installUrl",
-		"title": "App URL",
-		"description": "If you are using the self-hosted version of Active Collab, please enter here the application URL (must start with \"http://\" or \"https://\" and end with \"/\"). If you don't add an install URL, the extension defaults to the URL of the cloud version.",
+		"title": "Install URL",
+		"description": "If you are using the self-hosted version of Active Collab, please enter here the install URL (must start with \"http://\" or \"https://\" and end with \"/\"). If you don't add an install URL, the extension defaults to the URL of the cloud version.",
 		"type": "string",
 		"value": "https://app.activecollab.com/"
 	}]
