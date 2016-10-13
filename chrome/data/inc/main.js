@@ -879,7 +879,7 @@ function Erm()
 		).done(function(taskInfo, projectInfo){
 			if(action==='current')
 			{
-				clearInterval(globalTimer);
+				clearTimeout(globalTimer);
 				globalTimer = null;
 				globalStartTime = null;
 			}
@@ -1059,7 +1059,7 @@ function Erm()
 		
 		if(taskFinished==='1')
 		{
-			clearInterval(globalTimer);
+			clearTimeout(globalTimer);
 			globalTimer = null;
 			globalStartTime = null;
 			
