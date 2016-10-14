@@ -2,7 +2,7 @@
 	"title": "Browser timer for Active Collab 5",
 	"name": "browsertimeractivecollab",
 	"version": "1.0.0",
-	"description": "Time tracker working in the Active Collab web dashboard. It stores time for each task in the time tracking section so you can use it for billing and reports.",
+	"description": "Web timer for Active Collab. It stores time for each task in the time tracking section so you can use it for billing and reports.",
 	"main": "index.js",
 	"author": "Erom Agency",
 	"homepage": "http://eromagency.com/actimer/",
