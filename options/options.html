@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Browser timer for Active Collab 5 - Options</title>
+	<style>
+		body {padding:10px; font-family:sans-serif;}
+		#status {color:#008800;}
+		#installUrl {width:100%; margin:10px 0;}
+	</style>
+</head>
+<body>
+	<form id="form">
+		<div>
+			<label for="installUrl">If you are using the self-hosted version of Active Collab, please enter here the install URL (must start with "http://" or "https://" and end with "/"). If you don't add an install URL, the extension defaults to the URL of the cloud version.</label>
+			<input type="text" id="installUrl" />
+		</div>
+		<input type="submit" value="Save" />
+		<span id="status">&nbsp;</span>
+	</form>
+	<script src="options.js"></script>
+</body>
+</html>
