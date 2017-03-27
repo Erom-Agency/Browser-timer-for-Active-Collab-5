@@ -4,6 +4,7 @@ function Erm()
 
 	var globalAppUrl = 'https://app.activecollab.com/';
 	var globalApiUrl = 'api/v1';
+	var globalACCookiePart = 'activecollab_csrf_validator_for_';
 
 	var globalSaveTimeDiff = 10;
 
@@ -158,7 +159,7 @@ function Erm()
 		var items = document.cookie.split(';');
 		for(var i=0; i<items.length; i++)
 		{
-			if(items[i].indexOf('ac_ActiveCollab_csrf_validator_for_') > -1)
+			if(items[i].toLowerCase().indexOf(globalACCookiePart) > -1)
 			{
 				key = items[i].split('=').pop();
 			}
