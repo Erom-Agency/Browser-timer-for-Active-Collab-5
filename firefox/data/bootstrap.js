@@ -2,9 +2,11 @@
 	
 	"use strict";
 
-	self.port.on("installUrl", function(installUrl) {
+	browser.storage.local.get({
+		installUrl: ''
+	}, function(items) {
 		var erm = new Erm();
-		erm.init(installUrl);
+		erm.init(items.installUrl);
 	});
 
 })();
